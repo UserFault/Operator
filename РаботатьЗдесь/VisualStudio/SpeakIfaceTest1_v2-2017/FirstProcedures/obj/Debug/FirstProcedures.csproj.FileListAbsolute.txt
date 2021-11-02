@@ -1,0 +1,22 @@
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\FirstProcedures.dll
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\FirstProcedures.pdb
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\SpeakIfaceTest1.exe
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\SpeakIfaceTest1.pdb
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\obj\Debug\ResolveAssemblyReference.cache
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\obj\Debug\FirstProcedures.dll
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\obj\Debug\FirstProcedures.pdb
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\FirstProcedures.dll
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\FirstProcedures.pdb
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\SpeakIfaceTest1.exe
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\bin\Debug\SpeakIfaceTest1.pdb
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\obj\Debug\FirstProcedures.dll
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\FirstProcedures\obj\Debug\FirstProcedures.pdb
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\bin\Debug\SIdb.mdb
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\bin\Debug\FirstProcedures.dll
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\bin\Debug\FirstProcedures.pdb
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\bin\Debug\SpeakIfaceTest1.exe
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\bin\Debug\SpeakIfaceTest1.pdb
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\obj\Debug\FirstProcedures.dll
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\FirstProcedures\obj\Debug\FirstProcedures.pdb

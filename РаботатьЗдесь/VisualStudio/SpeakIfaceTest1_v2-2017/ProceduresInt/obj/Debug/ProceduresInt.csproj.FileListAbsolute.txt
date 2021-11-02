@@ -1,0 +1,8 @@
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\bin\Debug\SIdb.mdb
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\bin\Debug\ProceduresInt.dll
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\bin\Debug\ProceduresInt.pdb
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\bin\Debug\SpeakIfaceTest1.exe
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\bin\Debug\SpeakIfaceTest1.pdb
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\obj\Debug\ResolveAssemblyReference.cache
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\obj\Debug\ProceduresInt.dll
+V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\ProceduresInt\obj\Debug\ProceduresInt.pdb

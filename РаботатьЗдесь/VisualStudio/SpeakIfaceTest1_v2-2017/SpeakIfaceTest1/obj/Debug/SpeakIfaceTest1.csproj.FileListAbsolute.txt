@@ -1,0 +1,21 @@
+C:\Documents and Settings\Smith John\Мои документы\Visual Studio 2008\Projects\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Smith John\Мои документы\Visual Studio 2008\Projects\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.exe
+C:\Documents and Settings\Smith John\Мои документы\Visual Studio 2008\Projects\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.pdb
+C:\Documents and Settings\Smith John\Мои документы\Visual Studio 2008\Projects\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.exe
+C:\Documents and Settings\Smith John\Мои документы\Visual Studio 2008\Projects\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.pdb
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.exe
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.pdb
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.exe
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.pdb
+V:\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.exe
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.pdb
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.exe
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.pdb
+C:\Work\Mapped\Projects\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.exe
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\SpeakIfaceTest1.pdb
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.exe
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SpeakIfaceTest1.pdb
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\SpeakIfaceTest1\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\SpeakIfaceTest1\bin\Debug\SIdb.mdb
