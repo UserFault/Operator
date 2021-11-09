@@ -8,3 +8,8 @@ V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIface
 V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\x86\Debug\ResolveAssemblyReference.cache
 V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\x86\Debug\regexTest.exe
 V:\МоиПроекты\РечевойИнтерфейс\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\x86\Debug\regexTest.pdb
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\bin\x86\Debug\regexTest.exe
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\bin\x86\Debug\regexTest.pdb
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\x86\Debug\regexTest.exe
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\x86\Debug\regexTest.pdb

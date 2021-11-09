@@ -78,8 +78,6 @@ namespace SpeakIfaceTest1
         /// </summary>
         public void Init()
         {
-            
-            
             //выводим приветствие и описание программы
             this.OperatorConsole.PrintTextLine("Консоль речевого интерфейса. Версия " + Utility.getOperatorVersionString(), DialogConsoleColors.Сообщение);
             this.OperatorConsole.PrintTextLine("Для завершения работы приложения введите слово выход или quit", DialogConsoleColors.Сообщение);
@@ -87,10 +85,42 @@ namespace SpeakIfaceTest1
 
             logWriter.WriteLine("SESSION {0}", DateTime.Now.ToString());
 
-            //init database
-            //заполнить кеш-коллекции процедур и мест данными из БД
-            //CachedDbAdapter делает это сам
-            m_db.Open(DbAdapter.CreateConnectionString("SIdb.mdb"));
+            ////init database
+            ////заполнить кеш-коллекции процедур и мест данными из БД
+            ////CachedDbAdapter делает это сам
+            //m_db.Open(DbAdapter.CreateConnectionString("SIdb.mdb"));
+
+            //если новой бд нет в каталоге приложения, создаем ее и копируем в нее все данные из старой БД.
+            string str = "sidb.sqlite";
+            string connectionString = SqliteDbAdapter.CreateConnectionString(str, false);
+            SqliteDbAdapter sqliteDbAdapter = new SqliteDbAdapter();
+            if (!File.Exists(str))
+            {
+                SqliteDbAdapter.DatabaseCreate(str);
+                sqliteDbAdapter.Open(connectionString);
+                sqliteDbAdapter.CreateDatabaseTables();
+                sqliteDbAdapter.Close();
+                if (File.Exists("SIdb.mdb"))
+                {
+                    OleDbAdapter oleDbAdapter = new OleDbAdapter();
+                    oleDbAdapter.Open(OleDbAdapter.CreateConnectionString("SIdb.mdb"));
+                    List<Place> allPlaces = oleDbAdapter.GetAllPlaces();
+                    List<Procedure> allProcedures = oleDbAdapter.GetAllProcedures();
+                    oleDbAdapter.Close();
+                    sqliteDbAdapter.Open();
+                    sqliteDbAdapter.TransactionBegin();
+                    foreach (Place p in allPlaces)
+                        sqliteDbAdapter.AddPlace(p);
+                    sqliteDbAdapter.TransactionCommit();
+                    sqliteDbAdapter.TransactionBegin();
+                    foreach (Procedure p in allProcedures)
+                        sqliteDbAdapter.AddProcedure(p);
+                    sqliteDbAdapter.TransactionCommit();
+                    sqliteDbAdapter.Close();
+                }
+            }
+            this.m_db.Open(connectionString);
+
 
             //БД оставим открытой на весь сеанс работы Оператора
             return;
@@ -135,6 +165,7 @@ namespace SpeakIfaceTest1
                 //если строка пустая, начинаем новый цикл приема команды
                 if (String.IsNullOrEmpty(query))
                     continue;
+
                 logWriter.WriteLine("QUERY {0}", query);
                 //триммим из запроса пробелы всякие лишние сразу же
                 query = query.Trim();
@@ -518,6 +549,11 @@ namespace SpeakIfaceTest1
             return;
         }
 
+        public void DbRemovePlace(Place p)
+        {
+            this.m_db.RemovePlace(p);
+        }
+
         /// <summary>
         /// NT-Добавить Процедуру в БД
         /// </summary>
@@ -541,6 +577,12 @@ namespace SpeakIfaceTest1
 
             return;
         }
+
+        public void DbRemoveProcedure(Procedure p)
+        {
+            this.m_db.RemoveProcedure(p);
+        }
+
         /// <summary>
         /// NT-Выбрать из БД Места по названию, без учета регистра символов
         /// </summary>

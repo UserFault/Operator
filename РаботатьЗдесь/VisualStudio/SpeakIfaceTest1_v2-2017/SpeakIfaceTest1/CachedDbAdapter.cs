@@ -7,7 +7,7 @@ namespace SpeakIfaceTest1
     /// <summary>
     /// Адаптер БД с кешем хранящихся элементов
     /// </summary>
-    public class CachedDbAdapter: DbAdapter
+    public class CachedDbAdapter: SqliteDbAdapter
     {
         /// <summary>
         /// Список процедур, все процедуры держим здесь в памяти. Они примерно будут занимать до 1 мб на 1000 процедур.
@@ -104,6 +104,14 @@ namespace SpeakIfaceTest1
             return;
         }
 
+
+        public void RemovePlace(Place p)
+        {
+            this.RemovePlace(p.TableId);
+            this.reloadPlaces();
+        }
+
+
         /// <summary>
         /// NT-Добавить Процедуру в БД и обновить кеш процедур
         /// </summary>
@@ -131,6 +139,13 @@ namespace SpeakIfaceTest1
             reloadProcedures();
 
             return;
+        }
+
+
+        public void RemoveProcedure(Procedure p)
+        {
+            this.RemoveProcedure(p.TableId);
+            this.reloadProcedures();
         }
 
         #endregion

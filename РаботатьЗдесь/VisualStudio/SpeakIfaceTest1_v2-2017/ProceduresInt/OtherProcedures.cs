@@ -110,6 +110,7 @@ namespace ProceduresInt
         /// <returns>Возвращает безопасное название файла</returns>
         private static string ReplaceInvalidPathChars(string title, char p)
         {
+            //TODO: перенести эту функцию в более правильное место по семантике.
             StringBuilder sb = new StringBuilder(title);
             Char[] inpc = Path.GetInvalidFileNameChars();
             foreach (Char c in inpc)

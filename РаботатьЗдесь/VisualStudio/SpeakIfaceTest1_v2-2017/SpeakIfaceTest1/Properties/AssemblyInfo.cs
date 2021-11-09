@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SpeakIfaceTest1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Default")]
+[assembly: AssemblyCompany("Pavel Seliakov")]
 [assembly: AssemblyProduct("SpeakIfaceTest1")]
-[assembly: AssemblyCopyright("Copyright © Default 2016")]
+[assembly: AssemblyCopyright("Copyright © Pavel Seliakov 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.5.10")]
-[assembly: AssemblyFileVersion("1.0.5.10")]
+[assembly: AssemblyVersion("1.0.6.11")]
+[assembly: AssemblyFileVersion("1.0.6.11")]

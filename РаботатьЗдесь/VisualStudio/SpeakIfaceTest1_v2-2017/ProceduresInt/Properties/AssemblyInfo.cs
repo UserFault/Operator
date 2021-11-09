@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ProceduresInt")]
 [assembly: AssemblyDescription("Operator service procedures")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("JS")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Operator")]
-[assembly: AssemblyCopyright("Copyright © JS 2019")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
