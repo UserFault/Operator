@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Collections;
 
 
-namespace SpeakIfaceTest1.Lexicon
+namespace Operator.Lexicon
 {
     /// <summary>
     /// Представляет консоль Оператора для всех процедур и внутренних функций движка и всего приложения

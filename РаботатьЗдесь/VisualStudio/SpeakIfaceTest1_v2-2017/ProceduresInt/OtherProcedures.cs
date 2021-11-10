@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SpeakIfaceTest1;
+using Operator;
 using System.IO;
 using System.Diagnostics;
-using SpeakIfaceTest1.Lexicon;
+using Operator.Lexicon;
 
 namespace ProceduresInt
 {

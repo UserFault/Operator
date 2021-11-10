@@ -2,7 +2,7 @@
 using System.Text;
 using System.IO;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     class Program
     {

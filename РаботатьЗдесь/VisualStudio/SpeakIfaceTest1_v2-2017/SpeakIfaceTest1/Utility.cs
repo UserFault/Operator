@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Reflection;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     /// <summary>
     /// Разные статические вспомогательные функции

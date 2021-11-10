@@ -4,7 +4,7 @@ using System.Reflection;
 using System.IO;
 using System.Text;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     /// <summary>
     /// Класс Процедуры Оператора

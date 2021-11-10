@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SpeakIfaceTest1;
-using SpeakIfaceTest1.Lexicon;
+using Operator;
+using Operator.Lexicon;
 
 namespace ProceduresInt
 {

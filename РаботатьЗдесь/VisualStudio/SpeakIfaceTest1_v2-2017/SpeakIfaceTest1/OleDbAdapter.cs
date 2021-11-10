@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data.OleDb;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     //некоторые функции тут помечены как virtual, чтобы в производном классе их пометить override.
     //тогда при вызове функций внутри кода функций базового класса вызываются переопределенные функции из производного класса.

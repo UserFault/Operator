@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FirstProcedures")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Procedure assembly for Operator")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Default")]
-[assembly: AssemblyProduct("FirstProcedures")]
-[assembly: AssemblyCopyright("Copyright © Default 2016")]
+[assembly: AssemblyCompany("Pavel Seliakov")]
+[assembly: AssemblyProduct("Operator")]
+[assembly: AssemblyCopyright("Copyright © Pavel Seliakov 2016 - 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -7,13 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "regexTest", "regexTest\rege
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstProcedures", "FirstProcedures\FirstProcedures.csproj", "{327B43BE-FF3F-4DD4-B920-202B87AC0BAF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F3F772B-A37B-412B-BFC2-EF3945668B36}"
-	ProjectSection(SolutionItems) = preProject
-		Документация\Вывод на Консоль.txt = Документация\Вывод на Консоль.txt
-		Документация\ДобавлениеКомандСозданияМестПроцедур.txt = Документация\ДобавлениеКомандСозданияМестПроцедур.txt
-		Документация\Пока будем держать места и процедуры в коде в памяти а не в БД.txt = Документация\Пока будем держать места и процедуры в коде в памяти а не в БД.txt
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProceduresInt", "ProceduresInt\ProceduresInt.csproj", "{87E6E4BB-55BE-4127-A08E-2968AC8274D7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorLogAnalyzer", "OperatorLogAnalyzer\OperatorLogAnalyzer.csproj", "{E6600BD2-DF6F-4A44-A316-29154624138B}"

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SpeakIfaceTest1.Lexicon
+namespace Operator.Lexicon
 {
     /// <summary>
     /// Выбранные цвета для текстовых диалогов консоли

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     /// <summary>
     /// Коллекция мест для быстрого доступа из кода

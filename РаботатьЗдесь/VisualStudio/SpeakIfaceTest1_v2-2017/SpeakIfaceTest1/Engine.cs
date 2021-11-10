@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using SpeakIfaceTest1.Lexicon;
+using Operator.Lexicon;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     // Консоль Оператора:
-    // Функции доступа к консоли из сборок процедур сейчас перенесены в класс SpeakIfaceTest1.Lexicon.DialogConsole.
+    // Функции доступа к консоли из сборок процедур сейчас перенесены в класс Operator.Lexicon.DialogConsole.
     // Для вывода сообщений на консоль использовать только! объект engine.OperatorConsole.
     //  так как я планирую вынести консоль совсем отдельно, то надо уже сейчас ее использование ограничить. 
     

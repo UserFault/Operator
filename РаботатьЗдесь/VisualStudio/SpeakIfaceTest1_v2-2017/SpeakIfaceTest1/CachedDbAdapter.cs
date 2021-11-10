@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     /// <summary>
     /// Адаптер БД с кешем хранящихся элементов

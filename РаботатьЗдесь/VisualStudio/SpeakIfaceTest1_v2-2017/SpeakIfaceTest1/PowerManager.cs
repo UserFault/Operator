@@ -4,7 +4,7 @@ using System.Text;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     /// <summary>
     /// Содержит функции управления питанием компьютера

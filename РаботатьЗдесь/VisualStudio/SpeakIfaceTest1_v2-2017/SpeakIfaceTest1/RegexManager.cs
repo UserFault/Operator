@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     /// <summary>
     /// Класс-контейнер для регекс-операций

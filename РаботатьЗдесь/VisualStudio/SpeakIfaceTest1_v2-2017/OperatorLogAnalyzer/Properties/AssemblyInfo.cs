@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("OperatorLogAnalyzer")]
 [assembly: AssemblyDescription("Query counter for Operator project")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Seliakov Pavel")]
+[assembly: AssemblyCompany("Pavel Seliakov")]
 [assembly: AssemblyProduct("Operator")]
-[assembly: AssemblyCopyright("Copyright © Seliakov Pavel 2020")]
+[assembly: AssemblyCopyright("Copyright © Pavel Seliakov 2020 - 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

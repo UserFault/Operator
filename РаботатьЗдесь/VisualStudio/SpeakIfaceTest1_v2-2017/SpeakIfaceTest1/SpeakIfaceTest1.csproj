@@ -8,8 +8,8 @@
     <ProjectGuid>{0C0712B8-AAF9-4645-BE4D-7670B1885135}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SpeakIfaceTest1</RootNamespace>
-    <AssemblyName>SpeakIfaceTest1</AssemblyName>
+    <RootNamespace>Operator</RootNamespace>
+    <AssemblyName>Operator</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,6 +39,7 @@
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
     <ErrorReport>prompt</ErrorReport>
+    <DocumentationFile>bin\x86\Debug\Operator.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -88,11 +89,21 @@
     <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SIdb.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <Content Include="Readme-Operator.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Todo.txt" />
-    <Content Include="Version.txt" />
+    <Content Include="SIdb.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Todo-Operator.txt" />
+    <Content Include="Version-Operator.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sidb.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

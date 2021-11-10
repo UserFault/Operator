@@ -5,7 +5,7 @@ using System.Data.Common;
 using System.Data.SQLite;
 using System.Globalization;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     public class SqliteDbAdapter
     {
