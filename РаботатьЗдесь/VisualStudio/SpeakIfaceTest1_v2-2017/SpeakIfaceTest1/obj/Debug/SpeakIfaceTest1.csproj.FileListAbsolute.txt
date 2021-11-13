@@ -31,3 +31,15 @@ C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗ
 C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\Readme-Operator.txt
 C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\Version-Operator.txt
 C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\sidb.sqlite
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\obj\Debug\Operator.exe
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\obj\Debug\Operator.pdb
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\Readme-Operator.txt
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\SIdb.mdb
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\Version-Operator.txt
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\sidb.sqlite
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\Operator.exe
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\Operator.pdb
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\System.Data.SQLite.dll
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\System.Data.SQLite.pdb
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\SpeakIfaceTest1\bin\Debug\System.Data.SQLite.xml

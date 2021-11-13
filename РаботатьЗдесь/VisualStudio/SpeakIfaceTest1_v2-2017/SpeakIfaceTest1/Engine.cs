@@ -130,14 +130,15 @@ namespace Operator
 
 
         /// <summary>
-        /// NR-Подготовка к завершению работы механизма
+        /// NT-Подготовка к завершению работы механизма
         /// </summary>
         internal void Exit()
         {
             //Закрыть БД если еще не закрыта
             if (this.m_db != null)
                 this.m_db.Close();
-
+            //но не обнулять ссылку, так как объект БД создается в конструкторе, а не в Init()
+            //Хотя вряд ли объект будет еще раз инициализирован и использован, но не надо путать слои.
             return;
         }
         #endregion
@@ -162,19 +163,21 @@ namespace Operator
 
                 //Операторы: return закрывает Оператор, а continue - переводит на следующий цикл приема команды
 
+                //триммим из запроса пробелы всякие лишние сразу же
                 //если строка пустая, начинаем новый цикл приема команды
                 if (String.IsNullOrEmpty(query))
                     continue;
-
+                query = query.Trim();//query теперь может оказаться пустой строкой
+                if (String.IsNullOrEmpty(query))
+                    continue;
+                //а если нет - обрабатываем запрос
                 logWriter.WriteLine("QUERY {0}", query);
-                //триммим из запроса пробелы всякие лишние сразу же
-                query = query.Trim();
                 //Если запрос требует завершения работы, завершаем цикл приема запросов. 
                 //Далее должно следовать сохранение результатов и закрытие приложения.
                 if (Dialogs.isSleepCommand(query) == true) //спящий режим компьютера
                 {
                     PowerManager.DoSleep();//запущенные приложения не закрываются, и Оператор - тоже
-                    continue; //не return, так как он завершает работу Оператора!
+                    continue; //не return, так как return завершает работу Оператора!
                 }
                 else if (Dialogs.isExitAppCommand(query) == true) return ProcedureResult.Exit; //закрытие приложения
                 else if (Dialogs.isExitShutdownCommand(query) == true) return ProcedureResult.ExitAndShutdown;//закрытие приложения и выключение машины

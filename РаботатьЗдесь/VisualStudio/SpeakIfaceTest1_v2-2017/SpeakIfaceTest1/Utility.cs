@@ -13,7 +13,7 @@ namespace Operator
     internal class Utility
     {
         #region Console titlebar CloseButton disable
-        //07072019 добавлено в MyCodeLibrary.CWindowProcessor 
+        //07072019 добавлено в Operator.CWindowProcessor 
         
         [DllImport("user32.dll", EntryPoint = "GetSystemMenu", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.Winapi)]
         private static extern IntPtr GetSystemMenu(IntPtr hWnd, int bRevert);

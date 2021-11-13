@@ -63,11 +63,18 @@ namespace Operator
 
         }
         /// <summary>
-        /// Завершение сеанса текущего поьзователя
+        /// NT-Завершение сеанса текущего поьзователя
         /// </summary>
         public static void DoLogoff()
         {
-            Process.Start("Shutdown.exe", " -l -t 00");
+            // if OS is Windows7,  command args will be " -l"
+            //if OS is WindowsXP, command args will be " -l -t 00"
+            String args = " -l";
+            if(SystemInfoManager.isWindowsXP())
+                args = " -l -t 00";
+            Process.Start("Shutdown.exe", args);
+
+            return;
         }
         /// <summary>
         /// Перезагрузка машины
