@@ -13,3 +13,13 @@ C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\rege
 C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\regexTest\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\regexTest\obj\Debug\regexTest.exe
 C:\Documents and Settings\JohnSmith\Рабочий стол\SpeakIfaceTest1\regexTest\obj\Debug\regexTest.pdb
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\bin\Debug\regexTest.exe
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\bin\Debug\regexTest.pdb
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\Debug\regexTest.exe
+C:\Users\Администратор\Documents\GitHub\Operator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\Debug\regexTest.pdb
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\bin\Debug\regexTest.exe
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\bin\Debug\regexTest.pdb
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\Debug\regexTest.exe
+C:\Users\Администратор\Documents\GitHub\myOperator\РаботатьЗдесь\VisualStudio\SpeakIfaceTest1_v2-2017\regexTest\obj\Debug\regexTest.pdb

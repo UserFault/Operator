@@ -2,11 +2,8 @@
 using System.Text;
 using System.IO;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
-    //После сборки и отладки добавить приложение в папку Запросы ( V:\Projects\РечевойИнтерфейс\Запросы )
-    //Там я собираю запросы для развития проекта
-
     class Program
     {
         /// <summary>

@@ -4,7 +4,7 @@ using System.Reflection;
 using System.IO;
 using System.Text;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     /// <summary>
     /// Класс Процедуры Оператора
@@ -100,7 +100,7 @@ namespace SpeakIfaceTest1
         //    //если к процедуре, надо приготовить аргументы, найти сборку, вызвать функцию, передать ей аргументы и вернуть результат.
         //}
 
-        #region *** Assemblies loading *** - перенести в подходящий класс
+        #region *** Assemblies loading *** - TODO: перенести функции в подходящий класс
         /// <summary>
         /// NT-Get assembly file path for assembly loading
         /// </summary>

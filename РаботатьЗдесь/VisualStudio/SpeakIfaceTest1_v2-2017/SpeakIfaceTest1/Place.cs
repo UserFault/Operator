@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     
     /// <summary>
@@ -135,6 +135,8 @@ namespace SpeakIfaceTest1
         /// <returns></returns>
         /// <remarks>
         /// Использован именно список, а не словарь, чтобы сравнивать слова без учета регистра символов.
+        /// TODO: вынести эту функцию отсюда в общую библиотеку, так как она явно общего назначения. 
+        /// Или как расширение списка: List'string'.Contains(string s, StringComparison mode)
         /// </remarks>
         private bool listNotContains(List<string> lis, string sss)
         {

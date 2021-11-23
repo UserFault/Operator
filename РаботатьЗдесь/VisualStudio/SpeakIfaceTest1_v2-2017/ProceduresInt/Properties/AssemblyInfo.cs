@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ProceduresInt")]
-[assembly: AssemblyDescription("Operator service procedures")]
+[assembly: AssemblyDescription("Operator internal procedures")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("JS")]
+[assembly: AssemblyCompany("Pavel Seliakov")]
 [assembly: AssemblyProduct("Operator")]
-[assembly: AssemblyCopyright("Copyright © JS 2019")]
+[assembly: AssemblyCopyright("Copyright © Pavel Seliakov 2016 - 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

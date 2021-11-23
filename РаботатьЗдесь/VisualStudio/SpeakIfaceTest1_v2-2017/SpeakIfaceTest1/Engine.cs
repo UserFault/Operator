@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using SpeakIfaceTest1.Lexicon;
+using Operator.Lexicon;
 
-namespace SpeakIfaceTest1
+namespace Operator
 {
     // Консоль Оператора:
-    // Функции доступа к консоли из сборок процедур сейчас перенесены в класс SpeakIfaceTest1.Lexicon.DialogConsole.
+    // Функции доступа к консоли из сборок процедур сейчас перенесены в класс Operator.Lexicon.DialogConsole.
     // Для вывода сообщений на консоль использовать только! объект engine.OperatorConsole.
     //  так как я планирую вынести консоль совсем отдельно, то надо уже сейчас ее использование ограничить. 
     
@@ -78,8 +78,6 @@ namespace SpeakIfaceTest1
         /// </summary>
         public void Init()
         {
-            
-            
             //выводим приветствие и описание программы
             this.OperatorConsole.PrintTextLine("Консоль речевого интерфейса. Версия " + Utility.getOperatorVersionString(), DialogConsoleColors.Сообщение);
             this.OperatorConsole.PrintTextLine("Для завершения работы приложения введите слово выход или quit", DialogConsoleColors.Сообщение);
@@ -87,10 +85,42 @@ namespace SpeakIfaceTest1
 
             logWriter.WriteLine("SESSION {0}", DateTime.Now.ToString());
 
-            //init database
-            //заполнить кеш-коллекции процедур и мест данными из БД
-            //CachedDbAdapter делает это сам
-            m_db.Open(DbAdapter.CreateConnectionString("SIdb.mdb"));
+            ////init database
+            ////заполнить кеш-коллекции процедур и мест данными из БД
+            ////CachedDbAdapter делает это сам
+            //m_db.Open(DbAdapter.CreateConnectionString("SIdb.mdb"));
+
+            //если новой бд нет в каталоге приложения, создаем ее и копируем в нее все данные из старой БД.
+            string str = "sidb.sqlite";
+            string connectionString = SqliteDbAdapter.CreateConnectionString(str, false);
+            SqliteDbAdapter sqliteDbAdapter = new SqliteDbAdapter();
+            if (!File.Exists(str))
+            {
+                SqliteDbAdapter.DatabaseCreate(str);
+                sqliteDbAdapter.Open(connectionString);
+                sqliteDbAdapter.CreateDatabaseTables();
+                sqliteDbAdapter.Close();
+                if (File.Exists("SIdb.mdb"))
+                {
+                    OleDbAdapter oleDbAdapter = new OleDbAdapter();
+                    oleDbAdapter.Open(OleDbAdapter.CreateConnectionString("SIdb.mdb"));
+                    List<Place> allPlaces = oleDbAdapter.GetAllPlaces();
+                    List<Procedure> allProcedures = oleDbAdapter.GetAllProcedures();
+                    oleDbAdapter.Close();
+                    sqliteDbAdapter.Open();
+                    sqliteDbAdapter.TransactionBegin();
+                    foreach (Place p in allPlaces)
+                        sqliteDbAdapter.AddPlace(p);
+                    sqliteDbAdapter.TransactionCommit();
+                    sqliteDbAdapter.TransactionBegin();
+                    foreach (Procedure p in allProcedures)
+                        sqliteDbAdapter.AddProcedure(p);
+                    sqliteDbAdapter.TransactionCommit();
+                    sqliteDbAdapter.Close();
+                }
+            }
+            this.m_db.Open(connectionString);
+
 
             //БД оставим открытой на весь сеанс работы Оператора
             return;
@@ -100,14 +130,15 @@ namespace SpeakIfaceTest1
 
 
         /// <summary>
-        /// NR-Подготовка к завершению работы механизма
+        /// NT-Подготовка к завершению работы механизма
         /// </summary>
         internal void Exit()
         {
             //Закрыть БД если еще не закрыта
             if (this.m_db != null)
                 this.m_db.Close();
-
+            //но не обнулять ссылку, так как объект БД создается в конструкторе, а не в Init()
+            //Хотя вряд ли объект будет еще раз инициализирован и использован, но не надо путать слои.
             return;
         }
         #endregion
@@ -132,18 +163,21 @@ namespace SpeakIfaceTest1
 
                 //Операторы: return закрывает Оператор, а continue - переводит на следующий цикл приема команды
 
+                //триммим из запроса пробелы всякие лишние сразу же
                 //если строка пустая, начинаем новый цикл приема команды
                 if (String.IsNullOrEmpty(query))
                     continue;
+                query = query.Trim();//query теперь может оказаться пустой строкой
+                if (String.IsNullOrEmpty(query))
+                    continue;
+                //а если нет - обрабатываем запрос
                 logWriter.WriteLine("QUERY {0}", query);
-                //триммим из запроса пробелы всякие лишние сразу же
-                query = query.Trim();
                 //Если запрос требует завершения работы, завершаем цикл приема запросов. 
                 //Далее должно следовать сохранение результатов и закрытие приложения.
                 if (Dialogs.isSleepCommand(query) == true) //спящий режим компьютера
                 {
                     PowerManager.DoSleep();//запущенные приложения не закрываются, и Оператор - тоже
-                    continue; //не return, так как он завершает работу Оператора!
+                    continue; //не return, так как return завершает работу Оператора!
                 }
                 else if (Dialogs.isExitAppCommand(query) == true) return ProcedureResult.Exit; //закрытие приложения
                 else if (Dialogs.isExitShutdownCommand(query) == true) return ProcedureResult.ExitAndShutdown;//закрытие приложения и выключение машины
@@ -518,6 +552,11 @@ namespace SpeakIfaceTest1
             return;
         }
 
+        public void DbRemovePlace(Place p)
+        {
+            this.m_db.RemovePlace(p);
+        }
+
         /// <summary>
         /// NT-Добавить Процедуру в БД
         /// </summary>
@@ -541,6 +580,12 @@ namespace SpeakIfaceTest1
 
             return;
         }
+
+        public void DbRemoveProcedure(Procedure p)
+        {
+            this.m_db.RemoveProcedure(p);
+        }
+
         /// <summary>
         /// NT-Выбрать из БД Места по названию, без учета регистра символов
         /// </summary>

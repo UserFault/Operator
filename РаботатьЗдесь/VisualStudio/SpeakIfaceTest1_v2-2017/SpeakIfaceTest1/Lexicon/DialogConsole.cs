@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Collections;
 
 
-namespace SpeakIfaceTest1.Lexicon
+namespace Operator.Lexicon
 {
     /// <summary>
     /// Представляет консоль Оператора для всех процедур и внутренних функций движка и всего приложения
@@ -238,6 +238,7 @@ namespace SpeakIfaceTest1.Lexicon
         /// <returns></returns>
         public string CreateLongDatetimeString(DateTime dt)
         {
+            //TODO: перенести эту функцию в семантику-лингвистику.
             return dt.ToString("dddd, d MMMM yyyyг. HH:mm:ss", this.m_RuCulture);
         }
         /// <summary>
